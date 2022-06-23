@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import ExpenseItem from './ExpenseItem';
 import Card from '../UI/Card';
 import ExpensesFilter from './ExpensesFilter';
@@ -24,9 +23,8 @@ const Expenses = (props) => {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-
         {
-          filteredItems.length === 0 ? <p>HELLOO BLYADDD</p> : filteredItems.map((expense) => (
+          filteredItems.length === 0 ? <p>FUCKİNG JSX REACT</p> : filteredItems.map((expense) => (
             <ExpenseItem
               key={expense.id}
               title={expense.title}
@@ -35,8 +33,6 @@ const Expenses = (props) => {
             />
           ))
         }
-
-
       </Card>
     </div>
   );
